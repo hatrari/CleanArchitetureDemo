@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Domain.Models;
 
-namespace Domain.Interfaces
+namespace Application.Interfaces
 {
-  public interface IItemRepository
+  public interface IItemService
   {
     Task<IEnumerable<Item>> GetAll();
     Task<Item> GetById(Guid id);
