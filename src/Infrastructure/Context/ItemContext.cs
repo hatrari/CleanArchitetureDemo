@@ -3,9 +3,9 @@ using Domain.Models;
 
 namespace Infrastructure.Context
 {
-  public class IItemContext : DbContext
+  public class ItemContext : DbContext
   {
-    public IItemContext(DbContextOptions options)
+    public ItemContext(DbContextOptions options)
       : base(options)
     {
     }
