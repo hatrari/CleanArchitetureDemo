@@ -35,11 +35,7 @@ namespace Infrastructure.Interfaces
 
     public async Task Delete(Guid id)
     {
-      Item item = await GetById(id); 
-      if(item == null)
-      {
-        throw new NullReferenceException();
-      }
+      Item item = await GetById(id);
       _context.Remove(item);
       await _context.SaveChangesAsync();
     }
